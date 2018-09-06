@@ -56,8 +56,7 @@ int main()
 heap* create_h()
 {
     heap* h = (heap*) malloc(sizeof(heap));
-    h->size = 0;
-    h->lenght = 0; 
+    h->size = 0; 
     return h;
 }
 
