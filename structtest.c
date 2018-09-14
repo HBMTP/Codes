@@ -156,7 +156,7 @@ int main()
 	int constsize = heap->size;
 	heapsort(heap);
 	heap->size= constsize;
-	print_heap(heap);
+	print_heap(heap);//printa dps do heapsort,pode tirar isso se quiser
 	return 0;
 }
 
