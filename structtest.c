@@ -155,8 +155,8 @@ int main()
 	hashtoheap(heap,hash);
 	int constsize = heap->size;
 	heapsort(heap);
-	heap->size= constsize;
-	print_heap(heap);//printa dps do heapsort,pode tirar isso se quiser
+	heap->size = constsize;
+	//print_heap(heap);//printa dps do heapsort,pode tirar isso se quiser
 	return 0;
 }
 
@@ -265,11 +265,11 @@ void heapfy(heap* heap,int i)
 void heapsort(heap* heap)
 {
 	build_heap(heap);
-	print_heap(heap);
+	print_heap(heap);//printa a heap mas pode tirar isso também
     int i,aux=0,aux2=0;
     for(i = heap->size;i >= 1;i--)
     {
-    	printf("The element I want: %d\n",heap->items[1]);
+    	printf("The element: %x, the frequency I want: %d\n",heap->data[1],heap->items[1]);
         aux = heap->items[i];
         heap->items[i] = heap->items[1];
         heap->items[1] = aux;
